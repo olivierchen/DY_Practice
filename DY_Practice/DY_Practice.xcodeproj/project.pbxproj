@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5169762219704400FFB747 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5169752219704400FFB747 /* MainViewController.swift */; };
+		AA516978221970E500FFB747 /* UIButtonVC-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA516977221970E500FFB747 /* UIButtonVC-extensions.swift */; };
 		AAF8849122130C0D008512C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8849022130C0D008512C8 /* AppDelegate.swift */; };
 		AAF8849622130C0D008512C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8849422130C0D008512C8 /* Main.storyboard */; };
 		AAF8849822130C0F008512C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF8849722130C0F008512C8 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA5169752219704400FFB747 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA516977221970E500FFB747 /* UIButtonVC-extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButtonVC-extensions.swift"; sourceTree = "<group>"; };
 		AAF8848D22130C0D008512C8 /* DY_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DY_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8849022130C0D008512C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF8849522130C0D008512C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,59 +76,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA9D6CF822158AAB009305BA /* Classes */ = {
+		AA51696322196B1800FFB747 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AA9D6CFE22158AAB009305BA /* Main */,
-				AA9D6CF922158AAB009305BA /* Home */,
-				AA9D6CFD22158AAB009305BA /* Live */,
-				AA9D6CFB22158AAB009305BA /* Follow */,
-				AA9D6CFC22158AAB009305BA /* Profile */,
-				AA9D6CFA22158AAB009305BA /* Tools */,
+				AA51696A22196B1800FFB747 /* Main */,
+				AA51696422196B1800FFB747 /* Home */,
+				AA51696922196B1800FFB747 /* Live */,
+				AA51696722196B1800FFB747 /* Follow */,
+				AA51696822196B1800FFB747 /* Profile */,
+				AA51696522196B1800FFB747 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		AA9D6CF922158AAB009305BA /* Home */ = {
+		AA51696422196B1800FFB747 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AA51697E2219772300FFB747 /* Controller */,
+				AA51697C2219772300FFB747 /* Model */,
+				AA51697D2219772300FFB747 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		AA9D6CFA22158AAB009305BA /* Tools */ = {
+		AA51696522196B1800FFB747 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AA51696622196B1800FFB747 /* Extensions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		AA9D6CFB22158AAB009305BA /* Follow */ = {
+		AA51696622196B1800FFB747 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA516977221970E500FFB747 /* UIButtonVC-extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA51696722196B1800FFB747 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Follow;
 			sourceTree = "<group>";
 		};
-		AA9D6CFC22158AAB009305BA /* Profile */ = {
+		AA51696822196B1800FFB747 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		AA9D6CFD22158AAB009305BA /* Live */ = {
+		AA51696922196B1800FFB747 /* Live */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Live;
 			sourceTree = "<group>";
 		};
-		AA9D6CFE22158AAB009305BA /* Main */ = {
+		AA51696A22196B1800FFB747 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA516979221976D100FFB747 /* Controller */,
+				AA51697A221976D100FFB747 /* Model */,
+				AA51697B221976D100FFB747 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA516979221976D100FFB747 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8849422130C0D008512C8 /* Main.storyboard */,
+				AA5169752219704400FFB747 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA51697A221976D100FFB747 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Main;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA51697B221976D100FFB747 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA51697C2219772300FFB747 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA51697D2219772300FFB747 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA51697E2219772300FFB747 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AAF8848422130C0D008512C8 = {
@@ -150,9 +213,8 @@
 		AAF8848F22130C0D008512C8 /* DY_Practice */ = {
 			isa = PBXGroup;
 			children = (
-				AA9D6CF822158AAB009305BA /* Classes */,
+				AA51696322196B1800FFB747 /* Classes */,
 				AAF8849022130C0D008512C8 /* AppDelegate.swift */,
-				AAF8849422130C0D008512C8 /* Main.storyboard */,
 				AAF8849722130C0F008512C8 /* Assets.xcassets */,
 				AAF8849922130C0F008512C8 /* LaunchScreen.storyboard */,
 				AAF8849C22130C0F008512C8 /* Info.plist */,
@@ -309,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA516978221970E500FFB747 /* UIButtonVC-extensions.swift in Sources */,
 				AAF8849122130C0D008512C8 /* AppDelegate.swift in Sources */,
+				AA5169762219704400FFB747 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
